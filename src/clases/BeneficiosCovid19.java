@@ -1,5 +1,7 @@
 package clases;
 
+import java.util.List;
+
 public class BeneficiosCovid19 {
     private String id;
     private String nombre;
@@ -29,13 +31,14 @@ public class BeneficiosCovid19 {
         return valorSubsidio;
     }
 
-    public Float getMejorbeneficio(Float x){
-        float y = this.getValorSubsidio();
-        if(x >= y ){
-            return x;
-        }else{
-            return y ;
-        }
+    public Float getMejorbeneficio(Float valorCompara ){
+        float mejorBeneficio
+        float valorClase = this.valorSubsidio;
+        if(valorCompara>valorClase)
+            mejorBeneficio = valorCompara;
+        else
+            mejorBeneficio=valorClase;
 
+        return mejorBeneficio;
     }
 }
