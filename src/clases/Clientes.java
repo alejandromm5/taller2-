@@ -30,4 +30,13 @@ public class Clientes {
     public void setListaBeneficios(List<BeneficiosCovid19> listaBeneficios) {
         this.listaBeneficios = listaBeneficios;
     }
+
+    @Override
+    public String toString() {
+        return "Clientes{" +
+                "nombre='" + nombre + '\'' +
+                ", Cedula='" + Cedula + '\'' +
+                ", listaBeneficios=" + listaBeneficios +
+                '}';
+    }
 }

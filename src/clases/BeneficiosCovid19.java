@@ -32,7 +32,7 @@ public class BeneficiosCovid19 {
     }
 
     public Float getMejorbeneficio(Float valorCompara ){
-        float mejorBeneficio
+        float mejorBeneficio;
         float valorClase = this.valorSubsidio;
         if(valorCompara>valorClase)
             mejorBeneficio = valorCompara;
@@ -40,5 +40,14 @@ public class BeneficiosCovid19 {
             mejorBeneficio=valorClase;
 
         return mejorBeneficio;
+    }
+
+    @Override
+    public String toString() {
+        return "BeneficiosCovid19{" +
+                "id='" + id + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", valorSubsidio=" + valorSubsidio +
+                '}';
     }
 }

@@ -45,6 +45,10 @@ public class Main {
                     miCliente.setListaBeneficios(beneficios2);
                     j = 1;
                 }
+                JOptionPane.showMessageDialog(null,"Informacion Cleinte " + i +"\n" +
+                         "Nombre Cliente " + miCliente.getNombre() + "\n" +
+                         "Cedula Cliente " + miCliente.getCedula() + "\n" +
+                         "Lista de Beneficios" + miCliente.getListaBeneficios());
             }
 
             Main.comparListas(beneficios1, beneficios2);
@@ -57,11 +61,22 @@ public class Main {
     public static void comparListas(List<BeneficiosCovid19> beneficios1, List<BeneficiosCovid19> beneficios2) {
 
         float mejorBeneficio = 0;
-        String nombre;
-        Number idLista;
+
         BeneficiosCovid19  compara = new BeneficiosCovid19();
 
         String resultado = (beneficios1 == beneficios2) ? "Iguales" : "Diferentes";
+
+        for(int i = 0 ; i < beneficios1.size(); i++)
+            if (beneficios1.get(i).getNombre().equals(beneficios2.get(i).getNombre()) {
+                JOptionPane.showMessageDialog("Los beneficios son iguales");
+
+        }else{
+               JOptionPane.showMessageDialog(null,"Los nombres del beneficio  \n" +
+                       beneficios1.get(i).getNombre() + "\n" +
+                       beneficios2.get(i).getNombre());
+        }
+
+
 
         for(int i = 0; i < beneficios1.size(); i++) {
              mejorBeneficio = compara.getMejorbeneficio(beneficios1.get(i).getValorSubsidio());
